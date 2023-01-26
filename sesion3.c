@@ -8,7 +8,7 @@ struct strVec2 {
 typedef unsigned long long UInt64;
 typedef struct strVec2 Vec2;
 
-int main() {
+int main33() {
   UInt64 entero;
   //struct strVec2 v1 = {3.0, 4.5}, v2;
   Vec2 v1 = {3.0, 4.5}, v2;
@@ -45,9 +45,7 @@ int main() {
   }  
   for(i = 0; i < 5; i ++) {
      printf("(%.1f, %.1f)\n", vecArray[i].x, vecArray[i].y);
-  }  
-  
-  
+  }   
 }
 
 int main3(void) {
