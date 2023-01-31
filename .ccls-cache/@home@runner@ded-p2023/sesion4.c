@@ -30,7 +30,7 @@ void print1(int array[], int N) {
   printf("\n");
 }
 
-int main() {
+int main4() {
   int array[20] = {1, 2, 3, 4};
   printf("Array en main:   %p, %p, %p\n", &array, array, &array[0]);
   print1(array, 10);
