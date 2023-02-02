@@ -36,7 +36,7 @@ void printAll(char words[][20], int N) {
   }
 }
 
-int main() {
+int main55() {
   char name[][20] = { "Jorge", 
                       "Roberto", 
                       "Arias", 
