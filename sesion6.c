@@ -13,7 +13,7 @@ int sumar(int a, int b) { return a + b; }
 
 int restar(int x, int y) { return x - y; }
 
-int main() {
+int mainSeis() {
   void (*serEducado)(void) = NULL;
   serEducado = saludar;
   // seAmable!=serEducado,Jajaja
