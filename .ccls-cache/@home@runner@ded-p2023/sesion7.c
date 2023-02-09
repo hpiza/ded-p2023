@@ -15,17 +15,17 @@ typedef void (*PrintDateF) (Date);
 //  • 15 de enero de 2016: 15/01/16
 //  • 8 de mayo de 2009: 08/05/09
 
-void printShortDate(Date dateStruct){
+static void printShortDate(Date dateStruct){
   printf("%02d/%02d/%02d\n", dateStruct.day, dateStruct.month, dateStruct.year%100);
 }
 
 // Recibe: un arreglo de fechas, # de elementos, apuntador a una función de impresión
-void printDates(Date dates[], int N, PrintDateF printDate) {
+static void printDates(Date dates[], int N, PrintDateF printDate) {
   int i;
   for(i = 0; i < N; i ++) printDate(dates[i]);
 }
 
-int main() {
+int main77() {
   Date dates[] = { {7, 2, 2023}, {15, 4, 1973}, {24, 6, 1998}, {8, 11, 2003} };
   Date d1; 
 
