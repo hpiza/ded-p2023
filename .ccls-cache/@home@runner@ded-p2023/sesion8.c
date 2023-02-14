@@ -68,7 +68,7 @@ int main8() {
 Ejercicio 5. Implementa una función compareFloat que reciba dos apuntadores a flotantes y que devuelva un número entero: -1 si el primer flotante apuntado es menor que el segundo, 1 si el primer flotante apuntado es mayor que el segundo, 0 si el primer flotante apuntado es igual que el segundo.
 */
 
-int compareFloat(float *numero1, float *numero2) {
+static int compareFloat(float *numero1, float *numero2) {
   if(*numero1 > *numero2)
     return 1;
   
@@ -81,14 +81,14 @@ int compareFloat(float *numero1, float *numero2) {
 
 /*
 Ejercicio 6. Implementa una función compareInt que reciba dos apuntadores a enteros y que devuelva un número entero: negativo, positivo o cero. No utilices la sentencia if */
-int compareInt(int *a, int *b) {
+static int compareInt(int *a, int *b) {
   return *a - *b;
 }
 
 /*
 Ejericio 7. Implementa una función compareDate que reciba dos apuntadores a Date y que devuelva un número entero. Prueba su funcionamiento con estas fechas:
 Date d1 = { 27, 8, 2020 }, d2 = { 15, 12, 2008 }, d3 = { 27, 8, 2020 }; */
-int compareDate(PDate DateOne, PDate DateTwo){
+static int compareDate(PDate DateOne, PDate DateTwo){
   int result[3] = { DateOne->year - DateTwo->year, DateOne->month - DateTwo->month, DateOne->day - DateTwo->day };
   if(result[0] != 0) return result[0];
   if(result[1] != 0) return result[1];    
@@ -100,7 +100,7 @@ int compareDate(PDate DateOne, PDate DateTwo){
 }
 
 
-int main(){
+int main8a(){
   // Ejercicio 5. 
   float x = 3.4, y = 4.8, z = 4.8;
   printf("%d, %d, %d\n", compareFloat(&x, &y), compareFloat(&y, &x), compareFloat(&y, &z));
