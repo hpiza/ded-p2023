@@ -75,7 +75,7 @@ int max(void* array[], int N, CompareFunc compareFunc) {
   return mi;
 }
 
-int main() {
+int main9() {
   int intArray[] = { 3, 4, 1, 5, 2 };
   int maxIndex = maxInt(intArray, 5);  // maxIndex = 3 (5)
   printf("Max = (index=%d,value=%d)\n", maxIndex, intArray[maxIndex]);
