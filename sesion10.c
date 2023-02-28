@@ -13,13 +13,13 @@ void function(int n) {
   if(n > 0) function(n - 1);
 }
 
-int main() {
+int main10a() {
   function(1);
   function(1);
   globalCalls ++;
   //calls ++;
   printf("%d\n", globalCalls);
-  printf("%p, %p\n", function, main);
+  printf("%p, %p\n", function, main10a);
 
   int arreglo[5] = {10};
   printf("%p, %p, %p\n", &arreglo[0], &arreglo, arreglo);
