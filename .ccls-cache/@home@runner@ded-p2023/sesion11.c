@@ -20,7 +20,7 @@ int* sum(int* a1, int* a2, int n) {
   return a3;
 }
 
-int main() {
+int main11() {
   int a1[] = { 1, 2, 3, 4 };
   int a2[] = { 5, 6, 7, 8 };
   int* a3 = sum(a1, a2, 4);
