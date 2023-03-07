@@ -31,8 +31,15 @@ float** transpose(float** matrix, int rows, int columns){
 // 2. Crea la matriz con memoria dinámica
 // 3. Crea un método que devuelva la transpuesta de una matriz de R x C
 
+void freeMatrix(float** matrix, int rows) {
+  for(int r = 0; r < rows; r ++) {
+    free(matrix[r]);
+  }
+  free(matrix);
+}
 
-int main() {
+// rf = row float  cf = column float
+int main1212() {
   //1. 
   int rf,cf;
   printf("Ingrese el numero de filas: ");
@@ -41,12 +48,15 @@ int main() {
   scanf("%d", &cf);
   float** matrix;
   matrix = (float**) malloc(rf * sizeof(float*));
-  for(int i = 0; i<cf; i++){
+  for(int i = 0; i<rf; i++){
     matrix[i] = (float*) malloc(cf * sizeof(float));
   }
   printMatrix(matrix, rf, cf);
   float** tr = transpose(matrix, rf, cf);
   printMatrix(tr, cf, rf);
+
+  freeMatrix(tr, cf);
+  freeMatrix(matrix, rf);
   
   return 0;
 }
