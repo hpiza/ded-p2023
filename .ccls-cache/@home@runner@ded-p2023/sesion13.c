@@ -101,7 +101,7 @@ void initArray(int** array, int N, int v) {
 }
 
 // Arreglo dinámico de apuntadores a estructuras
-int main() {
+int main1313() {
   int x = 5, y = 6;
   swap13(&x, &y);
   printf("%d, %d\n", x, y);
