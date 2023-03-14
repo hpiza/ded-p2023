@@ -55,7 +55,7 @@ void swap14(int* a, int* b) {
   *b = bb;
 }
 
-int main() {
+int main1414() {
   // Ejercicio 4. Investigar la capacidad de memoria disponible.
   // En dos ciclos anidados solicitan espacio para 1000 números enteros de 32b.
   //     Ciclos de al menos mil iteraciones cada uno.
