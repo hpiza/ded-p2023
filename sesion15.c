@@ -1,7 +1,7 @@
 #include "Vec3.h"
 #include <stdio.h>
 
-int main() {
+int main15() {
 	Vec3 v1 = vec3_create(5, 1, 2);
 	printf("v1 = <%.1f, %.1f, %.1f>\n", vec3_getX(v1), vec3_getY(v1), vec3_getZ(v1));
 	vec3_setX(v1, 4);
