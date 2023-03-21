@@ -27,7 +27,7 @@ void printDates(Date *current) {
   printf("-------\n");
 }
 
-int main() {
+int main16() {
   printf("Estructuras autorreferenciales\n");
   Date d0 = {24, 12, 2020, NULL, NULL};
   //printf("%d/%d/%d - %p %p\n", d0.day, d0.month, d0.year, d0.self, d0.next);  
