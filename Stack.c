@@ -46,6 +46,7 @@ Type stack_pop(Stack s) {
   s->top = n->prior;
   free(n);
   s->size--;
+  //saca dato del primer nodo TOP
   return d;
 }
 

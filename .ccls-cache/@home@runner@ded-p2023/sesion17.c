@@ -1,7 +1,7 @@
 #include "Stack.h"
 #include <stdio.h>
 
-int main() { 
+int main17() { 
   Stack st1, st2, st3;
   
   st1 = stack_create();

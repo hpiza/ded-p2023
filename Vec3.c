@@ -53,11 +53,8 @@ void vec3_println(Vec3 v) {
   printf("\n");
 }
 
-
 Bool vec3_equals(Vec3 u, Vec3 v) {
-	return u->x == v->x && u->y == v->y && u->z == v->z;
+  return u->x == v->x && u->y == v->y && u->z == v->z;
 }
 
-Vec3 vec3_clone(Vec3 v) {
-	return vec3_create(v->x, v->y, v->z);
-}
+Vec3 vec3_clone(Vec3 v) { return vec3_create(v->x, v->y, v->z); }
